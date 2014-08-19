@@ -2,21 +2,29 @@ var answer = "puerto rico";
 var answer2 = "cuba";
 var answer3 = "asia";
 
-var Repeat = function(){
+var repeat = function(){
 var guess = prompt("Where do you think i'm from?").toLowerCase();
 if (guess === answer) {
   alert('You got that right!!!');
 } else if (guess === answer2){
   alert("I am not cuban, but our flag is very similar to their flag, Please try again!!!.");
-Repeat();
+repeat();
 } else if (guess === answer3){
   alert("They call me chino but im not Asian. Try again!!!.");
-Repeat();
+repeat();
 } else{
   alert("Not from there,Try again!!!");
-Repeat();
+repeat();
 }
 };
 
-var startGame = getElementById('click_me');
-startGame.addEventListener('click', Repeat, false);
+
+$('#click_me').on('click', repeat);
+
+
+
+$(document).ready(function(){
+  $('#main-container').animate({
+    "height":"1100px"
+  });
+});

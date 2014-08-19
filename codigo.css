@@ -24,6 +24,14 @@ h1{
   margin-left: 20px;
 }
 
+h2{
+  font-size: 2em;
+  color: #DA635D;
+  margin-left: 20px;
+  text-align: center;
+  margin-left: -1em;
+}
+
 li{
   display: inline-block;
   float: right;
